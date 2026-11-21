@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryan Souza | Dados, Finanças & Automação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo">Bryan Souza<span></span></a>
+      <nav class="nav">
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Apresentação -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Dados • Controladoria & Finanças • Automação</p>
+        <h1>Transformando dados complexos em decisões financeiras claras.</h1>
+        <p class="hero-description">
+          Profissional da área administrativa e financeira com foco em análise de dados,
+          Python, SQL, Business Intelligence e automação de processos.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">Ver Projetos</a>
+          <a href="https://github.com/Bryanludovino" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Projetos em Destaque</h2>
+            <p class="section-subtitle">
+              Soluções desenvolvidas para análise, visualização de indicadores e automação.
+            </p>
+          </div>
+
+          <!-- Filtros de Categoria (controlados pelo script.js) -->
+          <div class="filters" role="group" aria-label="Filtrar projetos">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="dados">Dados & BI</button>
+            <button class="filter-btn" data-filter="python">Python & Automação</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card de Projeto 1 -->
+          <article class="project-card" data-category="dados">
+            <div class="project-top">
+              <span class="project-tag">Business Intelligence</span>
+              <a href="https://github.com/Bryanludovino" target="_blank" rel="noopener noreferrer" class="project-link">
+                Acessar ↗
+              </a>
+            </div>
+            <h3>Dashboard de Vendas e Logística</h3>
+            <p>
+              Painel executivo para acompanhamento de faturamento, rentabilidade, custos operacionais e indicadores logísticos.
+            </p>
+            <ul class="tech-list">
+              <li>Power BI</li>
+              <li>DAX</li>
+              <li>Power Query</li>
+              <li>Excel</li>
+            </ul>
+          </article>
+
+          <!-- Card de Projeto 2 -->
+          <article class="project-card" data-category="python">
+            <div class="project-top">
+              <span class="project-tag">Automação & API</span>
+              <a href="https://github.com/Bryanludovino" target="_blank" rel="noopener noreferrer" class="project-link">
+                Acessar ↗
+              </a>
+            </div>
+            <h3>Integração Automatizada de Dados</h3>
+            <p>
+              Fluxo automatizado para coleta, tratamento e atualização de registros operacionais via API com redução de trabalho manual.
+            </p>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>n8n</li>
+              <li>APIs REST</li>
+            </ul>
+          </article>
+
+          <!-- Card de Projeto 3 (Modelo pronto para você editar depois) -->
+          <article class="project-card" data-category="python dados">
+            <div class="project-top">
+              <span class="project-tag">Análise Financeira</span>
+              <a href="https://github.com/Bryanludovino" target="_blank" rel="noopener noreferrer" class="project-link">
+                Acessar ↗
+              </a>
+            </div>
+            <h3>Análise e Tratamento de Base Financeira</h3>
+            <p>
+              Script em Python para limpeza, conciliação e geração de indicadores financeiros prontos para relatórios gerenciais.
+            </p>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section section-alt">
+      <div class="container">
+        <h2>Stack & Competências</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Dados & Programação</h3>
+            <p>Python (Pandas, NumPy, Streamlit), SQL, ETL, tratamento e modelagem de bases.</p>
+          </div>
+          <div class="skill-box">
+            <h3>BI & Visualização</h3>
+            <p>Power BI, Looker Studio, Excel avançado, construção de KPIs e dashboards executivos.</p>
+          </div>
+          <div class="skill-box">
+            <h3>Finanças & Processos</h3>
+            <p>Controladoria, fluxo de caixa, DRE, conciliação bancária, contas a pagar/receber e automação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container about-container">
+        <h2>Sobre</h2>
+        <p>
+          Atuo na interseção entre finanças corporativas, análise de dados e automação.
+          Meu objetivo é estruturar informações confiáveis, eliminar gargalos operacionais e apoiar a tomada de decisão com clareza.
+        </p>
+        <p>
+          Este portfólio também serve como laboratório contínuo para boas práticas de programação,
+          estruturação de projetos e versionamento com Git e GitHub.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé / Contato -->
+  <footer id="contato" class="footer">
+    <div class="container footer-content">
+      <div>
+        <h3>Vamos conversar?</h3>
+        <p>Aberto a oportunidades nas áreas Financeira, Administrativa e Análise de Dados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Bryanludovino" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:seuemail@exemplo.com">E-mail</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
